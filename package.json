@@ -17,12 +17,15 @@
     "lint:js": "eslint .",
     "start": "ember serve",
     "test": "ember test",
-    "test:all": "ember try:each"
+    "test:all": "ember try:each",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "ember-cli-babel": "^6.16.0",
     "ember-cli-htmlbars": "^3.0.0",
-    "ember-one-way-controls": "^3.1.0"
+    "ember-one-way-controls": "^3.1.0",
+    "snyk": "^1.228.5"
   },
   "devDependencies": {
     "@ember/jquery": "^0.5.2",
@@ -62,5 +65,6 @@
   "homepage": "https://github.com/poteto/ember-hypersearch",
   "ember-addon": {
     "configPath": "tests/dummy/config"
-  }
+  },
+  "snyk": true
 }
